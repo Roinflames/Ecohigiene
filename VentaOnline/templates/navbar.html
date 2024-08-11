@@ -1,0 +1,58 @@
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<nav class="navbar navbar-expand-lg navbar-expand-md  custom-navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'datos' %}">Acerca de nosotros</a>
+                </li>
+              <!--    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                  <ul class="dropdown-menu custom-dropdown-bg">
+                        <li><a class="dropdown-item custom-color" href="{% url 'contenedor' %}">Contenedores</a></li>
+                        <li><a class="dropdown-item custom-color" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item custom-color" href="#">Something else here</a></li>
+                    </ul>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                        Catalogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                        Precios</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <img src="{% static 'img/RRSS/instagram.png' %}" alt="instagram" style="width: 40px; height: 40px; margin-left: 10px; margin-right: 10px;">
+                <a href="https://wa.me/56950762299?text=Hola%21%20deseo%20hacer%20una%20cotizaci%C3%B3n" target="_blank">
+                    <img src="{% static 'img/RRSS/whatsapp.png' %}" alt="whatsapp" style="width: 40px; height: 40px; margin-left: 10px; margin-right: 10px;">         
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-content">
+    <center><img src="{% static 'logo/Isotipo.png' %}" alt="Isotipo" style="width: 60px; height: 60px; margin: 3px;"></center>
+    <center><img src="{% static 'logo/Ecohigiene Integral AI.png' %}" alt="Ecohigiene Integral AI" style="width: 120px; height: 60px; margin: 3px; margin-right: 15px; z-index: 10;"></center>
+</div>
+
+<style>
+    .custom-dropdown-bg {
+        background-color: #10232B;
+    }
+
+    .custom-dropdown-bg .custom-color {
+        color: white !important; /* Color negro */
+    }
+</style>

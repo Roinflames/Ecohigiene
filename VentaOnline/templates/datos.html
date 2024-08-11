@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% include "navbar.html" %}
+
+    <div class="container mt-4" style="background-color: white;">
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-12 mb-4" style="margin-top: 50px;">
+                    <div class="card custom-card">
+                        <div class="row g-0">
+                            <div class="col-md-12 col-lg-6">
+                                <img src="{% static 'logo/logo.png' %}" class="img-fluid rounded-start" alt="Image 1">
+                            </div>
+                            <div class="col-md-12 col-lg-6 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Acerca de nosotros:</h4>
+                                    <p class="card-text">En Ecohigiene Integral, nos esforzamos por ser más que un simple proveedor de productos. Queremos ser tus aliados en el camino hacia el éxito, brindándote soluciones innovadoras y de alta calidad que se adapten a tus necesidades específicas.
+
+                                        Nuestro compromiso es ofrecerte los mejores productos al mejor precio del mercado, sin comprometer la calidad ni la innovación. Creemos que todo el mundo merece acceder a soluciones de alta calidad sin tener que pagar un precio exorbitante.
+                                        <br><br>
+                                        En resumen, en Ecohigiene Integral nos enfocamos en brindarte:
+                                        <br><br>
+                                        - Productos de alta calidad y innovadores
+                                        <br>
+                                        - Precios competitivos sin comprometer la calidad
+                                        <br>
+                                        - Soluciones personalizadas para tus necesidades específicas
+                                        <br>
+                                        - Un compromiso con la innovación y la mejora continua
+                                        <br><br>
+                                        Confía en nosotros para encontrar las mejores soluciones para tus necesidades. ¡Trabajamos para ti!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
