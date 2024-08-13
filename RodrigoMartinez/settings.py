@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -59,7 +58,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\Diettoh\Desktop\Codigos\Rodrigo Martinez\RodrigoMartinez\VentaOnline\templates'],  # Ruta absoluta
+        'DIRS': [r'.\VentaOnline\templates'],  # Ruta absoluta
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,7 +123,6 @@ USE_TZ = True
 # settings.py
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
